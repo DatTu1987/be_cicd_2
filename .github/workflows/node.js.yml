@@ -26,4 +26,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci
-      - run: npm run dev:start
+      - run: pm2 restart be_cicd_2
