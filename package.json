@@ -1,0 +1,16 @@
+{
+  "name": "be_cicd_2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3"
+  },
+  "devDependencies": {}
+}
