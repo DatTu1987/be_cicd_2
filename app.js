@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-// app.get('/server/status', (req, res, next) => {
-//   res.status(200).json({
-//     status: 'Server status is ok!',
-//   });
-// });
+app.get('/server/status', (req, res, next) => {
+  res.status(200).json({
+    status: 'Server status is ok!',
+  });
+});
 
 app.get('/api/users', (req, res, next) => {
   res.status(200).json({
