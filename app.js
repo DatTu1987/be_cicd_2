@@ -8,6 +8,23 @@ app.get('/server/status', (req, res, next) => {
   });
 });
 
+app.get('/api/users', (req, res, next) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'api ok',
+    metadata: [
+      {
+        name: 'Dat Tu',
+        age: 30,
+      },
+      {
+        name: 'Thien Tu',
+        age: 12,
+      },
+    ],
+  });
+});
+
 app.use((req, res, next) => {
   const error = new Error('Not Found');
   error.status = 404;
